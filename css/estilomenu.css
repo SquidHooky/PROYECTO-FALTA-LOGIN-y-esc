@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	/* Menu de arriba */
+	top: 0;
+	width: 100%;
+	background-color:#F7DEA8;
+	height: 50px;
+}
+.menudesplegable{
+	/* El menu desplegable */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3F3119;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* Links del menu */
+.menudesplegable a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.letra{
+	font-family: Arkham;
+  text-decoration: none;
+  color:black;
+}
+
+/* Cambio de color de los links cuando tiene el mouse encima */
+.menudesplegable a:hover {
+  color: #f1f1f1;
+}
+
+/* Estilos y posicion del boton para cerrar el menu */
+.menudesplegable .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+	/* Hamburguesa para abrir el menu desplegable*/
+	font-family: sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #F7DEA8;
+  color:#000000;
+  padding: 10px 15px;
+  border: none;
+  float: left;
+}
+
+
+.espacio{
+  /*para cuando se necesite un espacio en blanco*/
+  height: 25px;
+}
+
+.fondo1 {
+	/* Ponemos la imagen de fondo */
+	background-image:url('../img/paperbackground.jpg');
+}
+
+/* INPUTS */
+
+.BotonGrande{
+  width: 200px;
+  height: 100px;
+  font-size: 25px;
+}
+
+.FileFotos{
+  border-style:solid;
+  border-color: black;
+  background-color:gray;
+  color: white;
+}
+
+.botoncentro{
+ text-align: center;
+ float: none;
+}
+
+
+/*FUENTES*/
+
+@font-face {
+/*Fuente para otro texto */
+  	font-family: Arkham;
+  	src: url(../fonts/ViceCitySans.otf);
+}
+
+@font-face {
+/*Fuente del nombre del juego */
+  	font-family: zeldafont;
+  	src: url(../fonts/zeldafont.otf);
+}
+
+.nombrejuego{
+	/* Clase para cuando se requiera escribir el nombre del juego */
+	font-family: zeldafont;
+	font-size:50px;
+	color: #6C5421;
+	right: 100%;
+  text-decoration: none;
+}
+
